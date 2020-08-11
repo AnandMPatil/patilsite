@@ -1,0 +1,16 @@
+{% extends 'polls/home.html' %}
+
+{% block content %}
+<form method="post">
+Hello, world. 1f71e393 is the polls index. de03beff
+{% csrf_token %}
+<label for"fname">1st name</label>
+<input type="text" id="fname" name=fname value=""><br><br>
+<label for"lname">Last name</label>
+<input type="text" id="lname" name=lname value=""><br>
+<input type="submit" value="Vote">
+</form>
+{% if msg %}
+<p>Full Name = <strong>{{ msg }}</strong></p>
+{% endif %}
+{% endblock %}

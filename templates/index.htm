@@ -1,0 +1,86 @@
+<html>
+<head>
+ <title>CSS</title>
+ <link type="text/css" rel="stylesheet" href="basic.css">
+ <style>
+ body {
+  font-family: arial, sans-serif;
+}
+
+nav {
+    background-color: lightgray;
+    height : 3em;
+    font-family: arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    vertical-align: middle;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav li a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+}
+
+.forward {
+    position: absolute;
+    right: 20px;
+}
+.bluecolor{
+    color: blue;
+}
+.fontmonospace{
+    font-family: monospace;
+}
+.borderstyle{
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+.margintop{
+    margin-top: 5em;
+}
+ </style>
+</head>
+<body><a href="#">Answer to the Ultimate Question</a>
+<nav>
+    <ul>
+        <li><a href="position.htm" class="back">Positioning Blocks</a></li>
+        <li><a href="index.htm" class="forward">Back to the Start </a></li>
+    </ul>
+</nav>
+    <h1 class="bluecolor">An Overview of CSS</h1>
+    <p>
+    These pages are intended to be explored in the developerconsole of your browser. You should also install the
+    <a href="https://chrispederick.com/work/web-developer/" target="_blank">Web Developer</a> plugin from Chris Pedrick to play with CSS.
+    </p>
+    <p>We can use the <b>style=</b> attribute on HTML tags to apply various styles to text and blocks of text. </p>
+    </p>
+    <p class="fontmonospace">The "Cascading" in CSS means that the closest style setting (monospace) "wins" over a syle setting (arial)
+    that is "further away".
+    </p>
+    <p class="borderstyle">
+    We can put a border around a block of text. You probably want a CSS cheat sheet handy or use Google to search to find CSS values.
+    </p>
+    <p>
+    While the <b>style</b> attribute <em>works</em>, it leads to overly verbose HTML so it is more typical to write CSS
+    <a href="rules.htm">&rArr; style rules</a> to apply styles to many tags at once.
+    </p>
+    <p class="margintop">
+    This material is part of the <a href="https://www.dj4e.com/" target="_blank"> Web Applications for Everybody (WA4E) </a> website and is copyright Creative
+    Commons Attribution.
+    </p>
+ </body>
+</html>

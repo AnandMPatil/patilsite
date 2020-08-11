@@ -1,0 +1,12 @@
+{% extends 'myarts/base_menu.html' %}
+{% block title %}{{ settings.APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Delete Article</h1>
+
+<p>Are you sure you want to delete the article: {{ article }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Yes, delete.">
+</form>
+{% endblock %}
